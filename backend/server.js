@@ -21,6 +21,10 @@ const connectDB = async () => {
   }
 };
 
+app.post("/",(req,res)=>{
+  res.send("server");
+});
+
 const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
