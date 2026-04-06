@@ -21,8 +21,8 @@ const connectDB = async () => {
   }
 };
 
-app.post("/",(req,res)=>{
-  res.send("server");
+app.get("/",(req,res)=>{
+  res.send("server is running");
 });
 
 const groq = new Groq({
